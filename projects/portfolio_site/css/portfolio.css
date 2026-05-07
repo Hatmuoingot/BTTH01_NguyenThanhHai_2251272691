@@ -96,3 +96,56 @@
     opacity: 0.9;
 }
 
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 2000;
+}
+
+.lightbox:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox img {
+    width: min(90vw, 900px);
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 16px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 980px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 680px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-filters {
+        gap: 0.5rem;
+    }
+
+    .portfolio-section {
+        padding: 3rem 0;
+    }
+}
