@@ -15,7 +15,7 @@
 
 .hero-overline {
     text-transform: uppercase;
-    font-size: 0.35rem;
+    letter-spacing: 0.35em;
     font-size: 0.85rem;
     margin-bottom: 1rem;
     opacity: 0.85;
@@ -41,7 +41,7 @@
     background: var(--color-light);
     color: var(--color-dark);
     font-weight: 700;
-    box-shadow: 0 18px 40px rgba(15, 232, 42, 0.15);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.15);
     transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 }
 
@@ -55,7 +55,8 @@
 
 @media (max-width: 768px) {
     .hero {
-        padding: 3rem 0;
+        min-height: auto;
+        padding: 80px 2rem 3rem;
     }
 
     .hero-text {
