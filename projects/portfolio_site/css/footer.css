@@ -1,3 +1,5 @@
+@import 'variables.css';
+
 .footer {
     background: var(--color-dark);
     color: white;
@@ -36,9 +38,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: var(--radius-full);
     background: rgba(255,255,255,0.1);
-    transition: all 0.3s ease;
+    transition: all var(--transition-normal);
     color: white;
 }
 
